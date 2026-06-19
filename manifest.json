@@ -1,0 +1,22 @@
+{
+  "name": "cortex-plugin-feature-flags",
+  "version": "1.0.0",
+  "description": "Feature Flag Lifecycle Manager — LaunchDarkly/Flagsmith/Unleash for flag creation, targeting, monitoring, cleanup",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-feature-flags",
+  "homepage": "https://cortexprism.io/marketplace/plugins/feature-flags",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "flag_create", "description": "Create feature flag", "params": [] },
+    { "name": "flag_set_targeting", "description": "Set targeting rules", "params": [] },
+    { "name": "flag_monitor", "description": "Monitor flag health", "params": [] },
+    { "name": "flag_cleanup", "description": "Auto-cleanup stale flags", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
